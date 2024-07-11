@@ -44,11 +44,41 @@
         <ul id="listaRecomendaciones"></ul>
 
         <p id="verificacion"></p>
+    
+        
         <footer>
             Creado por William Campal
         </footer>
+        <main>
+            <!-- Contenido principal de tu página aquí -->
+        
+            <!-- Opción desplegable para el procedimiento -->
+            <details>
+                <summary>Procedimiento</summary>
+                <footer>
+                    <p><strong>Procedimiento de Calculadora de Dilución</strong></p>
+                    <p>Esta calculadora es para calcular las diluciones de los analitos de litio, sodio, potasio y ICP.</p>
+                    <ul>
+                        <li><strong>Litio:</strong> Utiliza el punto medio de la curva, que es 2.5.</li>
+                        <li><strong>Sodio:</strong> Utiliza el punto medio de la curva, que es 7.5.</li>
+                        <li><strong>Potasio:</strong> Utiliza el punto medio de la curva, que es 5.</li>
+                        <li><strong>ICP:</strong> Utiliza el punto medio de la curva, que es 15.</li>
+                    </ul>
+                    <ol>
+                        <li>📊 Ingresa la concentración.</li>
+                        <li>🔍 Selecciona el analito (incluye ICP).</li>
+                        <li>🧮 Calcula la dilución con un clic en el botón.</li>
+                        <li>📋 Selecciona la dilución más adecuada para la segunda dilución (siempre a partir de la primera dilución con factor 50), considerando tus materiales o pipetas disponibles entre las recomendadas (más de 3 opciones).</li>
+                        <li>✅ Verifica el factor final de la dilución según tu elección en relación al orden. Recomendación: elige la primera o segunda opción, las más cercanas al punto medio de la curva. Todas las recomendaciones están dentro de la curva y son cercanas al punto medio.</li>
+                    </ol>
+                    <p><strong>¡Listo para hacer cálculos precisos de dilución!</strong></p>
+                    <p>Por William Campal 🧪✨🔬 <a href="https://workam1.github.io/calculadora-de-diluciones/" target="_blank">https://workam1.github.io/calculadora-de-diluciones/</a></p>
+                </footer>
+            </details>
+        
+        </main>
     </div>
-
+    
     <script>
         function calcularDilucion() {
             var concentracion = parseFloat(document.getElementById("concentration").value);
@@ -201,5 +231,6 @@
             document.getElementById("verificacion").innerHTML = verificacionText;
         }
     </script>
+    
 </body>
 </html>
